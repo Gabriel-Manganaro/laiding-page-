@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Escola DNC</title>
+</head>
+<body>
+   
+    <div id="divLogo">
+        <a href="index.html"><img src="imagens/logoDnc.svg" id="logo" alt=""></a>
+        <br>
+        <h1 id="textoPrincipal">
+            Dê os primeiros passos da<br>
+            sua carreira em Tecnologia
+        </h1>
+        <p id="textoPrincipal2">
+            Inscreva-se no curso gratuito de Introdução à<br>
+            Tecnologia da DNC School e aprenda os principais<br>
+            fundamentos para construir experiências efetivas.
+        </p>
+    </div>
+    <div id="objetivo">
+        <img src="imagens/objetivo.svg" id="imagemObjetivo" width="900px" height="100px" alt="">
+    </div>
+    <div id="divVideo">
+        <iframe id="video" width="300" height="210" src="https://www.youtube.com/embed/LWIK3gN6kBg" title="the daily life of the immortal king opening" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div>
+            <h1 id="tituloVideo">
+                Aprenda com especialistas e <br>
+                comece seu primeiro projeto<br>
+            </h1>
+            <br>
+            
+            <p id="textVideo"> 
+                Conheça o processo de desenvolvimento e entenda como utilizar<br>
+                os principais métodos e ferramentas da área para resolver<br>
+                problemas complexos.
+                <br>
+                <br>
+                Conquiste seu certificado e desenvolva um projeto prático para<br>
+                aplicar seus conhecimentos.
+            </p>    
+        </div>
+    </div>
+    <div id="menu">
+        <h1 id="textoRelatos">
+            Mais de 500 alunos já iniciaram seus estudos
+        </h1>
+        <div id="relatos">
+            <!-- onclick (ação de clicar) e rolar para direita variavel no Js-->
+            <img id="setaEsquerda" onclick="rolarParaEsquerda()" class="seta" src="imagens/setaEsquerda.svg" alt="">
+            <img id="leo" class="cards" src="imagens/leo.svg" width="400px" alt="">
+            <img id="sam" class="cards" src="imagens/sam.svg" width="400px" alt="">
+            <img id="bru" class="cards" src="imagens/bru.svg" width="400px" alt="">
+            <img id="setaDireita" onclick="rolarParaDireita()" class="seta" src="imagens/setaDireita.svg" alt="">
+        </div>
+    </div>
+    <div id="informacao">
+        <h1>
+            Comece agora mesmo e dê o próximo passo da sua carreira
+        </h1>
+        <br>
+        <br>
+        <form id="forms" action="https://formspree.io/f/xbjnlgbk" method="post">
+            <input placeholder=" Nome" type="text" id="emailInput" name="contactEmail" required="required">
+            <br>
+            <br>
+            <input placeholder=" E-mail" type="text" id="emailInput" name="contactEmail" required="required">
+            <br>
+            <br>
+            <input placeholder=" Telefone " type="text" id="emailInput" name="contactEmail" required="required">
+            <br>
+            <br>
+            <button id="botao" type="submit"> Acesse a ementa grátis </button>
+        </form>
+    </div> 
+<script src="index.js""></script>
+</body>
+</html>
